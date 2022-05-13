@@ -1,0 +1,66 @@
+.bio-progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: inherit;
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%);
+    border-radius: 10rem;
+  }
+.bio-progress-2{
+    width: 91%;
+}
+.bio-progress-3{
+    width: 80%;
+}
+.bio-progress-4{
+    width: 82%;
+}
+.bio-progress-5{
+    width: 85%;
+}
+
+.bio-progress-bar span{
+    position: absolute;
+    top: 1.8rem;
+    width: 4rem;
+    height: 2rem;
+    background: var(--helper);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: 0 0;
+}
+
+.bio-progress-bar span{
+    left: 75%;
+}
+.bio-progress-2 span{
+    left: 86%;
+}
+.bio-progress-3 span{
+    left: 75%;
+}
+.bio-progress-4 span{
+    left: 78%;
+}
+.bio-progress-5 span{
+    left: 80%;
+}
+
+.bio-progress-bar span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+    top: -1.6rem;
+}
