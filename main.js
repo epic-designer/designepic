@@ -1,0 +1,1 @@
+const p_btns = document.querySelector("")
