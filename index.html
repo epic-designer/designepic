@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="main.js"></script>
 
@@ -16,13 +17,18 @@
                 <!--?Sticky Navbar -->
         <nav class="navbar">
             <ul class="navbar-lists">
-                <li><a href="#" class="navbar-links home-link">Home</a></li>
-                <li><a href="#" class="navbar-links about-link">About</a></li>
-                <li><a href="#" class="navbar-links services-link">Services</a></li>
-                <li><a href="#" class="navbar-links portfolio-link">Portfolio</a></li>
+                <li><a href="./index.html" class="navbar-links home-link">Home</a></li>
+                <li><a href="./about.html" class="navbar-links about-link" target="_blank">About</a></li>
+                <li><a href="./services.html" class="navbar-links services-link" target="_blank">Services</a></li>
+                <!-- <li><a href="#" class="navbar-links portfolio-link">Portfolio</a></li> -->
                 <li><a href="#" class="navbar-links project-link">Projects</a></li>
+                <li><a href="./contact.html" target="_blank" class="navbar-links contact-link">Contact</a></li>
             </ul>
         </nav>
+        <div class="mobile-navbar-btn">
+          <ion-icon class="mobile-nav-button" name="menu-outline"></ion-icon>
+          <ion-icon class="mobile-nav-button" name="close-outline"></ion-icon>
+        </div>
                 <!--?Sticky Navbar -->
     </header>
     <!--* Hero Section -->
@@ -42,7 +48,7 @@
                     </div>
                 </div>
                 <div class="section-hero-image">
-                    <img src="/images/hero.jpg" alt="this is me Mohsin khan" class="hero-img">
+                    <img src="/Portfolio/images/hero.jpg" alt="this is me Mohsin khan" class="hero-img">
                 </div>
             </div>
         </section>
@@ -56,7 +62,7 @@
           <div class="bio-data">
             <h2 class="common-heading">my bio-data</h2>
             <p>
-              I am self lerner and fast lerner.I have team leading quality.I learned all of the from my self as from youtube,tutoriols,documentations,etc.Created many of mini and mega projects in different programming languages.
+              I am self lerner and fast lerner.I have team leading quality.I learned all of the from my self as from youtube, tutoriols, documentations, etc. Created many of mini and mega projects in different programming languages.
             </p>
             <br />
             <p>
@@ -102,7 +108,7 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
       <section class="section section-portfolio" id="portfolio-section">
         <div class="container">
@@ -118,34 +124,34 @@
 
 
       <div class="container grid grid-three-column portfolio-images">
-        <div class="img-overlay p-btn--1">
+        <div class="img-overlay p-btn--3  p-btn--1">
           <img src="./Final/frontEndDevelopment/public/images/folio/1.jpg" alt="my works" srcset="">
           <div class="overlay">
             <a href="https://epic-todolist.netlify.app/" target="_blank" class="common-heading">ToDo's List</a>
           </div>
         </div>
 
-        <div class="img-overlay p-btn--2">
+        <div class="img-overlay p-btn--3 p-btn--1">
           <img src="./Final/frontEndDevelopment/public/images/folio/3.jpg" alt="my works" srcset="">
           <div class="overlay">
             <a href="https://epickeep.netlify.app/" target="_blank" class="common-heading">Keep Notes</a>
           </div>
         </div>
 
-        <div class="img-overlay p-btn--3">
+        <div class="img-overlay p-btn--2 p-btn--1">
           <img src="./Final/frontEndDevelopment/public/images/folio/4.jpg" alt="my works" srcset="">
           <div class="overlay">
             <a href="https://notajoke.netlify.app/" target="_blank" class="common-heading">Random Joke</a>
           </div>
         </div>
-        <div class="img-overlay p-btn--4">
+        <div class="img-overlay p-btn--2 p-btn--1">
           <img src="./Final/frontEndDevelopment/public/images/folio/5.jpg" alt="my works" srcset="">
           <div class="overlay">
             <a href="https://weather-epic.netlify.app/" target="_blank" class="common-heading">Weather App</a>
           </div>
         </div>
-        <div class="img-overlay p-btn--5">
-          <img src="./Final/frontEndDevelopment/public/images/folio/5.jpg" alt="my works" srcset="">
+        <div class="img-overlay p-btn--2 p-btn--1">
+          <img src="images/1.avif" alt="my works" srcset="">
           <div class="overlay">
             <a href="https://epic-quotes.netlify.app/" target="_blank" class="common-heading">Random Quotes</a>
           </div>
@@ -158,5 +164,407 @@
         </div> -->
       </div>
       </section>
-</body>
+      
+      <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
+           @Work Counter Section
+       = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+
+      <section class="section-work-data section ">
+        <div class="container grid grid-four-column">
+          <div>
+            <h2 data-number="20" class="counter-numbers">0+</h2>
+            <p>project completed</p>
+          </div>
+          <div>
+            <h2 data-number="200" class="counter-numbers">0+</h2>
+            <p>Happy clients</p>
+          </div>
+          <div>
+            <h2 data-number="500" class="counter-numbers">0+</h2>
+            <p>cups of coffee</p>
+          </div>
+          <div>
+            <h2 data-number="3000" class="counter-numbers">0+</h2>
+            <p>real professionals</p>
+          </div>
+        </div>
+      </section>
+
+      <!--? services section starts -->
+      <section class="section-services section">
+        <div class="container">
+          <h2 class="common-heading">Services Offers</h2>
+          <p>Here are all services offeres by our team/organisation...</p>
+        </div>
+
+        <!-- services card -->
+        <div class="container grid grid-three-column">
+          <div class="service-box">
+            <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+            <h3>Web design</h3>
+            <P>You can't use up creativity. The more you use, the more you have</P>
+          </div>
+
+          <div class="service-box">
+            <ion-icon name="brush-sharp" class="service-icon"></ion-icon>
+            <h3>Graphic Design/Banner making</h3>
+            <P>You can't use up creativity. The more you use, the more you have</P>
+          </div>
+
+          <div class="service-box">
+            <ion-icon name="logo-android" class="service-icon"></ion-icon>
+            <h3>App development</h3>
+            <P>You can't use up creativity. The more you use, the more you have</P>
+          </div>
+
+          <div class="service-box">
+            <ion-icon name="laptop-outline" class="service-icon"></ion-icon>
+            <h3>Web development</h3>
+            <P>You can't use up creativity. The more you use, the more you have</P>
+          </div>
+
+          <div class="service-box">
+            <ion-icon name="phone-portrait-outline" class="service-icon"></ion-icon>
+            <h3>UI/UX design</h3>
+            <P>You can't use up creativity. The more you use, the more you have</P>
+          </div>
+
+          <div class="service-box">
+            <ion-icon name="code-outline" class="service-icon"></ion-icon>
+            <h3>Software programs</h3>
+            <P>You can't use up creativity. The more you use, the more you have</P>
+          </div>
+        </div>
+      </section>
+      <!--? services section ends-->
+          <!-- ======================================== 
+          Our Resume Section Start  
+    ========================================  -->
+    <section class="section-resume section " >
+      <div class="container grid grid-two-col">
+        <!-- resume left side  -->
+        <!-- <div class="resume-img">
+          <img src="images/biodata.jpg" alt="my resume pic" 
+            data-src="images/biodata.jpg"
+            loading="lazy"
+            class="lazy-img"
+          />
+        </div> -->
+
+        <!-- resume right side  -->
+        <div class="resume-data">
+          <h2 class="common-heading ">resume</h2>
+          <!-- <p class="resume-para">my work experience</p> -->
+
+          <!-- <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Online educator on Youtuber</h3>
+              <div class="grid grid-two-column">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> ThapaTechnical, Inc.
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> Pune, India
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">fulltime</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon>  <span>April 2018 - Present </span
+                > 
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd work experience  -->
+          <!-- <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Senior Front End Developer</h3>
+              <div class="grid grid-two-col">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> San Francisco
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">fulltime</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon> November 2021 -
+                Present
+              </p>
+            </div>
+          </div> -->
+
+          <!-- 3rd work experience  -->
+          <!-- <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Senior Front End Developer</h3>
+              <div class="grid grid-two-col">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> San Francisco
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">fulltime</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon>November 2021 -
+                Present
+              </p>
+            </div>
+          </div> -->
+
+          <!-- 4th work experience  -->
+          <!-- <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Senior Front End Developer</h3>
+              <div class="grid grid-two-col">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> San Francisco
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">fulltime</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon>November 2021 -
+                Present
+              </p>
+            </div>
+          </div> -->
+       
+          <!-- Education section  -->
+          <div class="resume-data-bottom-subsection"> 
+            <p class="resume-para">Education</p> 
+            <!-- 1st college  -->
+            <div class="resume-data-subsection margin-small">
+              <div class="resume-data-left">
+                <h3>Masters of Computer Application</h3>
+                <div class="grid grid-two-col">
+                  <p>
+                    <ion-icon name="business-outline"></ion-icon> Ramdev baba 
+                  </p>
+                  <p>
+                    <ion-icon name="location-outline"></ion-icon> Nagpur, MH
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-data-right">
+                <p class="resume-data-button"> Masters</p>
+                <p>
+                  <ion-icon name="calendar-outline"></ion-icon>  <span>May 2016 - 2018 </span
+                  > 
+                </p>
+              </div>
+            </div>
+
+             <!-- 2nd college  -->
+            <div class="resume-data-subsection ">
+              <div class="resume-data-left">
+                <h3>Bachelor of Computer Application</h3>
+                <div class="grid grid-two-col">
+                  <p>
+                    <ion-icon name="business-outline"></ion-icon> City premire college,Nagpur
+                  </p>
+                  <p>
+                    <ion-icon name="location-outline"></ion-icon> Nagpur, Maharastra
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-data-right">
+                <p class="resume-data-button"> Bachelor </p>
+                <p>
+                  <ion-icon name="calendar-outline"></ion-icon>  <span>May 2012 - 2015 </span
+                  > 
+                </p>
+              </div>
+            </div>
+            <!-- end  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? Contact us  start-->
+    <section class="section section-freelancing">
+      <div class="overlay">
+        <div class="container">
+          <h2>I am <span>available</span> for freelancing</h2>
+          <p>Let me get your work done.If you want to hire me for your work just Contact me 
+            by filling form below.
+          </p>
+          <a href="/contact.html" class="btn">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <!--? contact section -->
+    <section class="section section-contact">
+      <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+      </div>
+      <div class="section-contact-main contact-container">
+        <form action="https://formspree.io/f/xjvllgyw"
+        method="POST">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input type="text" name="username" id="username" placeholder="your name" required autocomplete="off"/>
+            </div>
+            <div>
+              <label for="email"></label>
+              <input type="email" name="email" id="email"  placeholder="email"  autocomplete="off"/>
+            </div>
+          </div>
+          <div>
+            <label for="subject"></label>
+            <input type="text" name="subject" id="subject" placeholder="subject" required autocomplete="off">
+          </div>
+          <div>
+            <label for="textarea"></label>
+            <textarea name="textarea" placeholder="entrer message" id="textarea" min="5" cols="30" rows="10" required autocomplete="off"></textarea>
+          </div>
+          <div>
+            <input type="submit" name="submit" id="submit" class="btn" value="send message">
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--? Contact us  end-->
+
+    <!--! Footer secion  -->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>We are all in one solution of your tech needs. <br>App development,ebsite development,Software,etc...</p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Home</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">About</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Servives</a>
+              </span>
+            </li>
+            <!-- <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Portfolio</a>
+              </span>
+            </li> -->
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Project</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Design</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">App Development</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Website Development</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">UI/UX Design</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon><a href="#">Software development</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="f-address">
+          <h3>Have a question</h3>
+          <address>
+            <div>
+              <p>
+                <span><ion-icon name="location-outline"></ion-icon></span>
+                Nagpur,Maharastra,India
+              </p>
+            </div>
+            <div>
+              <p>
+                <span><ion-icon name="call-outline"></ion-icon></span>
+                <a href="tel:+917378813172">+91 7378813172</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span><ion-icon name="mail-outline"></ion-icon></span>
+                <a href="mailto:designepicofficial@gmail.com">designepicofficial@gmail.com</a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="container">
+        <div class="f-social-icons">
+          <a href="https://www.instagram.com/mr.epic_designer/?igshid=YmMyMTA2M2Y=" target="_blank">
+            <ion-icon name="logo-instagram" class="icons"></ion-icon>
+          </a>
+
+            <a href="https://github.com/epic-designer" target="_blank">
+              <ion-icon name="logo-github" class="icons"></ion-icon>
+            </a>
+          </a>
+
+          <a href="https://m.facebook.com/Epic_Designer-106202725065181/" target="_blank">
+            <ion-icon name="logo-facebook" class="icons"></ion-icon>
+          </a>
+        </div>
+        <div class="f-credits">
+          <p>
+            Copyright 	&#169;2022 All rights reserved | Designs_Epic 
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--! Footer secion  -->
+
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </body>
 </html>
