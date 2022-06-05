@@ -98,6 +98,19 @@ li{
 {
     display: none;
 }
+/* sticky Navbar */
+.sticky .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 /*= = = = = = = = = = = = = =
 Reusabe code section
  = = = = = = = = = = = = = = */
@@ -568,7 +581,7 @@ Hero section
   }
   /** freelancing section */
 .section-freelancing{
-    background-image: url(../Final/frontEndDevelopment/public/images/folio/3.jpg);
+    background-image: url(../images/3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -792,6 +805,7 @@ footer a:hover,footer a:active{
     .active .mobile-navbar-btn .mobile-nav-button[name="menu-outline"]{
         display: none;
     }
+    
     .section-services .grid{
         gap: 6rem;
     }
@@ -809,12 +823,36 @@ footer a:hover,footer a:active{
     .container {
       max-width: 720px;
     }
+    .p-btns{
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem;
+        gap: 2.8rem;
+    }
+
     /* hero section  */
+    .section-hero-data{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-overlay .common-heading{
+        font-size: 3rem;
+    }
+    .resume-data-left{
+        gap: 5rem;
+        
+    }
     .section-hero .grid-two-column {
       grid-template-columns: 1fr;
     }
     .section-biodata .grid-two-column {
       grid-template-columns: 1fr;
+    }
+    .section-footer .f-about,
+    .section-footer .f-address{
+        grid-column: 1/-1;
     }
 /* Media Queries ens*/
 }
@@ -847,5 +885,43 @@ footer a:hover,footer a:active{
     /* services section  */
     .section-services .grid-three-column {
       grid-template-columns: 1fr;
+    }
+    .counter-numbers{
+        font-size: 3rem;
+    }
+    .resume-data-subsection{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+    .resume-data-right .resume-data-button,
+    .resume-data-bottom-subsection .resume-data-button{
+        min-width: 30%;
+    }
+    .resume-data-right{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+    }
+    .section-freelancing h2{
+        font-size: 3rem;
+    }
+    .contact-container{
+        padding: 0 3rem;
+    }
+    .contact-container .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+    .section-footer{
+        padding: 2 4rem;
+    }
+    .section-contact-main input[type="submit"]{
+        max-width: 40%;
+    }
+
+    .section-footer .f-about,
+    .section-footer .f-address{
+        grid-column: 1/-1;
     }
   }
